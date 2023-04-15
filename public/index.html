@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parqueadero </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+	<header>
+		<img src="logo.png" alt="Logo del parqueadero">
+	</header>
+	<main>
+		<section>
+			<h2>Registro de Usuario</h2>
+			<form id="formUsuario">
+				<label for="nombre_completo">Nombre completo:</label><br>
+				<input type="text" id="nombre_completo" name="nombre_completo"><br>
+				<label for="correo_electronico">Correo electrónico:</label><br>
+				<input type="email" id="correo_electronico" name="correo_electronico"><br>
+				<label for="contrasena">Contraseña:</label><br>
+				<input type="password" id="contrasena" name="contrasena"><br>
+				<label for="numero_telefono">Número de teléfono:</label><br>
+				<input type="tel" id="numero_telefono" name="numero_telefono"><br>
+				<label for="direccion">Dirección:</label><br>
+				<input type="text" id="direccion" name="direccion"><br>
+				<label for="tipo_cliente">Tipo de cliente:</label><br>
+				<select id="tipo_cliente" name="tipo_cliente">
+					<option value="estudiante">Estudiante</option>
+					<option value="profesor">Profesor</option>
+					<option value="empleado">Empleado</option>
+					<option value="otro">Otro</option>
+				</select><br>
+				<label for="fecha_registro">Fecha de registro:</label><br>
+				<input type="date" id="fecha_registro" name="fecha_registro"><br>
+				<label for="estado_cuenta">Estado de cuenta:</label><br>
+				<select id="estado_cuenta" name="estado_cuenta">
+					<option value="activo">Activo</option>
+					<option value="inactivo">Inactivo</option>
+				</select><br>
+				<input type="button" value="Registrar" onclick="crearUsuario()">
+			</form>
+		</section>
+		<section>
+			<h2>Registro de Vehículo</h2>
+			<form id="formVehiculo">
+				<label for="placa">Placa:</label><br>
+				<input type="text" id="placa" name="placa"><br>
+				<label for="marca">Marca:</label><br>
+				<input type="text" id="marca" name="marca"><br>
+				<label for="modelo">Modelo:</label><br>
+				<input type="text" id="modelo" name="modelo"><br>
+				<label for="tipo_vehiculo">Tipo de Vehículo:</label><br>
+				<input type="text" id="tipo_vehiculo" name="tipo_vehiculo"><br>
+				<label for="color">Color:</label><br>
+				<input type="text" id="color" name="color"><br>
+				<label for="id_usuario">ID de Usuario:</label><br>
+				<input type="text" id="id_usuario" name="id_usuario"><br>
+				<label for="fecha_ingreso">Fecha de Ingreso:</label><br>
+				<input type="date" id="fecha_ingreso" name="fecha_ingreso"><br>
+				<input type="button" value="Registrar" onclick="crearVehiculo()">
+		</section>
+
+	</main>
+	<footer>
+		<p>Parqueadero FUP &copy; 2023</p>
+	</footer>
+	<script src="usuariosService.js"></script>
+	<script src="vehiculosService.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

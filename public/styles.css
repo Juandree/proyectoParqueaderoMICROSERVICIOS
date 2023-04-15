@@ -1,0 +1,129 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  height: auto;
+}
+
+header {
+  background-color: #b3a3a3;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  max-width: 100px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 1em;
+  padding: 1em;
+  width: calc(50% - 2em); /* Para que ocupe el 50% del ancho */
+  min-width: 300px; /* Ancho mínimo */
+  max-width: 500px; /* Ancho máximo */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+input,
+select {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="button"],
+input[type="submit"] {
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #292929;
+}
+
+/* Estilos específicos para el formulario de usuario */
+#formUsuario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#formUsuario label,
+#formUsuario input,
+#formUsuario select {
+  width: calc(50% - 1em);
+}
+
+#formUsuario input[type="date"] {
+  width: 100%;
+}
+
+/* Estilos específicos para el formulario de vehículo */
+#formVehiculo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#formVehiculo label,
+#formVehiculo input {
+  width: calc(50% - 1em);
+}
+
+#formVehiculo input[type="date"] {
+  width: 100%;
+}
